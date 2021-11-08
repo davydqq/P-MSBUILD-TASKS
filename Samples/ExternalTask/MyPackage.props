@@ -1,0 +1,6 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <UsingTask TaskName="MyExternalTask" AssemblyFile="bin\debug\net5.0\ExternalTask.dll"/>
+    <Target Name="MyTasks" AfterTargets="AfterBuild">
+        <MyExternalTask MyParameter="Bar" />
+    </Target>
+</Project>
