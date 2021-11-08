@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <NeutralLanguage>aa-ET</NeutralLanguage>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="16.11.0" />
+  </ItemGroup>
+
+
+	<Import Project="MyTasks.targets" />
+	<!-- CHANGE ORDER IMPORT -->
+	<Import Project="MyTasks.props" />
+	
+	<Target Name="MyTasks" AfterTargets="AfterBuild">
+		<MyExternalTask MyParameter="Foobar"></MyExternalTask>
+	</Target>
+	
+</Project>

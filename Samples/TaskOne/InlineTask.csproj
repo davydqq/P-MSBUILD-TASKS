@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+	<Import Project="MyTasks.targets" /> <!-- CHANGE ORDER IMPORT -->
+	<Import Project="MyTasks.props" />
+	
+	<Target Name="MyTasksAntText" AfterTargets="AfterBuild">
+		<MyInlineTask MyParameter="TEST"></MyInlineTask>
+	</Target>
+	
+</Project>
