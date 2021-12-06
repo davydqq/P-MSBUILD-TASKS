@@ -6,7 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExternalTaskNET2" Version="1.0.0" />
     <PackageReference Include="GreetingTasks" Version="0.1.0-build20211206-1405" />
     <PackageReference Include="MyPackage" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
@@ -18,4 +17,12 @@
     </PackageReference>
   </ItemGroup>
 
+  <Target Name="Greet" BeforeTargets="PrepareForBuild">
+    <SayHello />
+  </Target>
+
+  <Target Name="Thank" AfterTargets="Build">
+    <SayThankYou />
+  </Target>
+  
 </Project>
