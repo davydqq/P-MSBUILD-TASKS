@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExternalTask" Version="1.0.0" />
+    <PackageReference Include="ExternalTaskNET2" Version="1.0.0" />
     <PackageReference Include="MyPackage" Version="1.0.0">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>

@@ -10,7 +10,7 @@
 
   <Import Project="MyTasks.targets" />
 
-  <Target Name="MyTasks" AfterTargets="AfterBuild">
+  <Target Name="MyTasks" AfterTargets="PostBuildEvent">
     <MyExternalTask MyParameter="Foobar"></MyExternalTask>
   </Target>
 
