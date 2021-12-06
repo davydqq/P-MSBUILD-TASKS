@@ -1,0 +1,2 @@
+dont use visual studio for build
+only CLI `dotnet builc` and `dotnet msbuild`
